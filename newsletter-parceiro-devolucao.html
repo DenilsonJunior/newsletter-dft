@@ -60,27 +60,19 @@
     <table width="100%" style="max-width: 620px; margin: 0 auto; padding: 36px 10px 10px;">
         <tr>
             <td>
-                <h2 style="font-size: 18px;">Oi, {{CUSTOMER_NAME}}!</h2>
+                <p style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">Oi, [NomeRemetente]! Tudo certo?</p>
 
-                <p style="margin-top: 18px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
-                    Estamos com você nessa devolução e tá <b>tudo certo</b> por aqui! Olha só o que você precisa fazer agora:
+                <p style="margin-top: 18px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">Fique tranquilo, devolver o seu produto na [DsRemetente] é super simples! A gente te ajuda em cada passo. Bora lá?</p>
+
+                <p style="margin-top: 18px; font-size: 15px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
+                    <b>EM 4 PASSOS</b> VOCÊ CONCLUI SUA DEVOLUÇÃO. VEJA COMO:
                 </p>
 
-                <p style="margin: 20px 0 31px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
+                <p style="margin: 28px 0 31px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
                     <b>O que você devolveu:</b>
                 </p>
 
-                {{PRODUCTS}}
-
-                <p style="margin-top: 32px; font-size: 15px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
-                    <b>ÚLTIMOS 2 SIMPLES PASSOS</b> PARA DEVOLVER:
-                </p>
-
-                <p style="margin-top: 25px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
-                    Em no máximo <b>48 horas</b>, você receberá um e-mail do nosso parceiro com o seu <b>código de autorização</b>.
-                </p>
-
-                <table width="100%" style="max-width: 700px; margin: 32px auto 0;">
+                <table width="100%" style="max-width: 700px; margin: 28px auto 0;">
                     <tr>
                         <td align="left" border="0" style="display: inline-block;">
                             <table>
@@ -90,7 +82,63 @@
                                     </td>
                                     <td>
                                         <p style="margin: 0; margin-left: 5px; font-size: 12px;">
-                                            Coloque o produto, de preferência, na embalagem original (caso não a tenha mais, pode usar outro embrulho que sirva), junto com os acessórios e a <b>Nota Fiscal</b>. Se não tiver a nota, use a <b><a style="color: #2B13F3;" href="https://www.correios.com.br/enviar/encomendas/arquivo/nacional/formulario-declaracao-de-conteudo-a5" target="_blank" rel="noopener noreferrer"><i>Declaração de Conteúdo</i></a></b>.
+                                            <b>Seu código de devolução</b>
+                                        </p>
+                                        <p style="margin: 0; margin-left: 5px; font-size: 12px;">
+                                            É só levar esse código a qualquer agência dos Correios em [DsCidadeRemetente]
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; border-radius: 15px; padding: 10px 0 0 35px;">
+                    <p style="line-height: 15px;">
+                        Código da Autorização de Postagem:&nbsp;
+                        <span style="font-weight: bolder; color: darkgreen; background: rgb(214, 252, 214); padding: 2px 8px; border-radius: 50px; line-height: 17px; display: inline-block; font-size: 17px;">[cdsro]</span><br />
+                        Autorizador da Postagem:&nbsp;<span style="font-weight: bolder;">Mandou Bem Log</span><br />
+                        Data de Emissão:&nbsp;<span style="font-weight: bolder;">[DataAgora]</span><br />
+                        Data de Validade:&nbsp;<span style="font-weight: bolder;">[dias]</span><br />
+                        Quantidade de objetos:&nbsp;<span style="font-weight: bolder;">1</span><br />
+                        Serviços Autorizados:<span style="font-weight: bolder;">&nbsp;Reversa-CÓDIGO Serviço Autorizado</span>
+                    </p>
+                </div>
+                
+                <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: rgb(246, 246, 246); border-radius: 5px; padding: 15px 25px; margin: 30px 0 0 35px; border: 2px dashed rgb(221, 221, 221);">
+                    <h5 style="margin-top: 0px;"><span style="font-weight: bolder;">Destinatário</span></h5>
+                    <p>
+                        <span style="text-transform: uppercase;">[NOMEDESTINATARIO]</span><br />
+                        [DsLogradouroDestinatario], [DsNumeroDestinatario]<br />
+                        [DscomplementoDestinatario]<br />
+                        [DsCEPDestinatario] - [DsCidadeDestinatario] - [CdUFDestinatario]
+                    </p>
+                </div>
+                <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: rgb(246, 246, 246); border-radius: 7px; padding: 15px 25px; margin: 20px 0 0 35px; border: 2px dashed rgb(221, 221, 221);">
+                    <h5 style="margin-top: 0px;"><span style="font-weight: bolder;">Remetente</span></h5>
+                    <p>
+                        <span style="text-transform: uppercase;">[NOMEREMETENTE]</span><br />
+                        [DsLogradouroRemetente], [DsNumeroRemetente]<br />
+                        [DsCEPRemetente] - [DsCidadeRemetente] - [CdUFRemetente];
+                    </p>
+                </div>
+
+                <table width="100%" style="max-width: 700px; margin: 32px auto 0;">
+                    <tr>
+                        <td align="left" border="0" style="display: inline-block;">
+                            <table>
+                                <tr>
+                                    <td align="center" valign="middle" style="vertical-align: baseline;">
+                                        <p style="background-color: #000001; margin: auto; color: #ffffff; width: 25px; height: 25px;  border-radius: 50%; padding-top: 4px; display: block; font-weight: bold;">2</p>
+                                    </td>
+                                    <td>
+                                        <p style="margin: 0; margin-left: 5px; font-size: 12px;">
+                                            <b>O que levar com o produto</b>
+                                        </p>
+                                        <p style="margin: 0; margin-left: 5px; font-size: 12px;">
+                                            Inclua os acessórios e a Nota Fiscal. Perdeu a nota? Sem problema! Basta preencher esse <b><a style="color: #2B13F3;" href="https://www.correios.com.br/enviar/encomendas/arquivo/nacional/formulario-declaracao-de-conteudo-a5" target="_blank" rel="noopener noreferrer"><i>formulário de declaração</i></a></b>.
                                         </p>
                                     </td>
                                 </tr>
@@ -105,11 +153,14 @@
                             <table>
                                 <tr>
                                     <td align="center" valign="middle" style="vertical-align: baseline;">
-                                        <p style="background-color: #000001; margin: auto; color: #ffffff; width: 25px; height: 25px;  border-radius: 50%; padding-top: 4px; display: block; font-weight: bold;">2</p>
+                                        <p style="background-color: #000001; margin: auto; color: #ffffff; width: 25px; height: 25px;  border-radius: 50%; padding-top: 4px; display: block; font-weight: bold;">3</p>
                                     </td>
                                     <td>
                                         <p style="margin: 0; margin-left: 5px; font-size: 12px;">
-                                            Vá até uma agência dos Correios e entregue o pacote. Não esqueça de usar o código, hein?
+                                            <b>Hora de embalar corretamente</b>
+                                        </p>
+                                        <p style="margin: 0; margin-left: 5px; font-size: 12px;">
+                                            Use a embalagem original ou outra que seja adequada. Veja como embalar da forma correta <b><a style="color: #2B13F3;" href="https://www.correiosrastreamentos.digital/enviar-e-receber/encomendas/prepare-seu-objeto.html" target="_blank" rel="noopener noreferrer"><i>aqui</i></a></b>.
                                         </p>
                                     </td>
                                 </tr>
@@ -118,16 +169,30 @@
                     </tr>
                 </table>
 
-                <p style="margin-top: 30px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
-                    Fique de olho na caixa de spam, tá? Você vai receber um e-mail do <b>nosso parceiro</b> com o código de postagem.
-                </p>
+                <table width="100%" style="max-width: 700px; margin: 22px auto 0;">
+                    <tr>
+                        <td align="left" border="0" style="display: inline-block;">
+                            <table>
+                                <tr>
+                                    <td align="center" valign="middle" style="vertical-align: baseline;">
+                                        <p style="background-color: #000001; margin: auto; color: #ffffff; width: 25px; height: 25px;  border-radius: 50%; padding-top: 4px; display: block; font-weight: bold;">4</p>
+                                    </td>
+                                    <td>
+                                        <p style="margin: 0; margin-left: 5px; font-size: 12px;">
+                                            <b>Pronto. Agora é só enviar!</b>
+                                        </p>
+                                        <p style="margin: 0; margin-left: 5px; font-size: 12px;">
+                                            Com tudo pronto, vá até os Correios e entregue com o seu código.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
 
                 <p style="margin-top: 20px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
-                    <b>Ah, só um detalhe:</b> O código de postagem estará válido após <b>3 horas</b> de você recebê-lo, e ele vale por <b>10 dias corridos</b>.
-                </p>
-
-                <p style="margin-top: 20px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
-                    Qualquer dúvida, pode contar com a gente. Estamos aqui para te ajudar!
+                    Qualquer dúvida, a gente tá por aqui! Vamos te ajudar em tudo o que precisar.
                 </p>
 
                 <p style="margin: 47px 0 0; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: center;">
@@ -143,16 +208,6 @@
             <tr>
                 <td>
                     <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c014cec820063a41bba/original.png?1728580608" alt="" width="100%" style="display: block; border: 0;">
-                </td>
-            </tr>
-        </table>
-
-        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 20px 0 25px;">
-            <tr>
-                <td style="text-align: center;">
-                    <p style="font-size: 12px; margin: 0;"> <b>CONTATO</b></p>
-                    <p style="font-size: 12px; margin: 0;"> Estamos sempre abertos para falar com você.</p>
-                    <p style="font-size: 12px; margin: 0;"> Para enviar suas dúvidas, sugestões ou comentários, contate-nos.</p>
                 </td>
             </tr>
         </table>
