@@ -38,56 +38,47 @@
                 width: 100%;
             }
         }
-
     </style>
 </head>
 
 <body bgcolor="#ffffff" style="color: #2F2F2F; font-family: Arial, Helvetica, sans-serif; line-height: 1.1;">
 
-    <!-- Imagem do topo -->
+    <!-- Header -->
     <header>
-        <table width="100%" style="display: block; max-width: 700px; text-align: center; margin: 0 auto;">
+        <table width="100%" style="max-width: 700px; margin: 0 auto;">
             <tr>
                 <td>
                     <a href="https://www.dafiti.com.br/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://dafitistatic.dafiti.com.br/cms/newsletter/2024_08_14_16_59_43_Header.png" alt="" width="100%" style="display: block; border: 0;">
+                        <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c0141d509006326f5bc/original.png?1728580609" alt="" width="100%" style="display: block; border: 0;">
                     </a>
                 </td>
             </tr>
         </table>
     </header>
 
-    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 36px 50px 10px;">
+    <!-- Body -->
+    <table width="100%" style="max-width: 620px; margin: 0 auto; padding: 36px 10px 10px;">
         <tr>
             <td>
-                <h2 style="font-size: 18px;">OlÁ {{CUSTOMER_NAME}},</h2>
+                <h2 style="font-size: 18px;">Oi, {{CUSTOMER_NAME}}!</h2>
 
-                <p style="margin-top: 18px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">Estamos com você nessa devolução e tá tudo certo por aqui! Olha só o que você precisa fazer agora.</p>
+                <p style="margin-top: 18px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
+                    Estamos com você nessa devolução e tá <b>tudo certo</b> por aqui! Olha só o que você precisa fazer agora:
+                </p>
 
-                <p style="margin: 20px 0 31px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;"><b>O que você devolveu:</b></p>
+                <p style="margin: 20px 0 31px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
+                    <b>O que você devolveu:</b>
+                </p>
 
                 {{PRODUCTS}}
 
-                <p style="margin-top: 32px; font-size: 15px; font-family: Arial, Helvetica, sans-serif; text-align: left;"><b>2 SIMPLES PASSOS</b> PARA DEVOLVERS:</p>
+                <p style="margin-top: 32px; font-size: 15px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
+                    <b>ÚLTIMOS 2 SIMPLES PASSOS</b> PARA DEVOLVER:
+                </p>
 
-                <p style="margin-top: 25px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">Em no máximo <b>48 horas</b>, você receberá um e-mail da Mandou Bem (<a style="color: #000001;" href="mailto:reversafacil@mandoubem.com.br" target="_blank" rel="noopener noreferrer">reversafacil@mandoubem.com.br</a>) com o seu <b>código de autorização</b>.</p>
-
-                <table width="100%" style="max-width: 700px; margin: 32px auto 0;">
-                    <tr>
-                        <td align="left" border="0" style="display: inline-block;">
-                            <table>
-                                <tr>
-                                    <td align="center" valign="middle" style="vertical-align: baseline;">
-                                        <p style="background-color: #000001; margin: auto; color: white; width: 25px; height: 25px;  border-radius: 50%; padding-top: 4px; display: block; font-weight: bold;">1</p>
-                                    </td>
-                                    <td>
-                                        <p style="margin: 0; margin-left: 5px; font-size: 12px;">Coloque o produto, de preferência, na embalagem original (caso não a tenha mais, use outra que sirva), junto com os acessórios e a <b>Nota Fiscal</b>. Se não tiver a nota, use a <b><a style="color: #2B13F3;" href="https://www.correios.com.br/enviar/encomendas/arquivo/nacional/formulario-declaracao-de-conteudo-a5" target="_blank" rel="noopener noreferrer"><i>Declaração de Conteúdo</i></a></b>.</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
+                <p style="margin-top: 25px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
+                    Em no máximo <b>48 horas</b>, você receberá um e-mail do nosso parceiro com o seu <b>código de autorização</b>.
+                </p>
 
                 <table width="100%" style="max-width: 700px; margin: 32px auto 0;">
                     <tr>
@@ -95,10 +86,12 @@
                             <table>
                                 <tr>
                                     <td align="center" valign="middle" style="vertical-align: baseline;">
-                                        <p style="background-color: #000001; margin: auto; color: white; width: 25px; height: 25px;  border-radius: 50%; padding-top: 4px; display: block; font-weight: bold;">2</p>
+                                        <p style="background-color: #000001; margin: auto; color: #ffffff; width: 25px; height: 25px;  border-radius: 50%; padding-top: 4px; display: block; font-weight: bold;">1</p>
                                     </td>
                                     <td>
-                                        <p style="margin: 0; margin-left: 5px; font-size: 12px;">Vá até uma agência dos Correios e entregue o pacote. Não esqueça de usar o código, hein?</p>
+                                        <p style="margin: 0; margin-left: 5px; font-size: 12px;">
+                                            Coloque o produto, de preferência, na embalagem original (caso não a tenha mais, pode usar outro embrulho que sirva), junto com os acessórios e a <b>Nota Fiscal</b>. Se não tiver a nota, use a <b><a style="color: #2B13F3;" href="https://www.correios.com.br/enviar/encomendas/arquivo/nacional/formulario-declaracao-de-conteudo-a5" target="_blank" rel="noopener noreferrer"><i>Declaração de Conteúdo</i></a></b>.
+                                        </p>
                                     </td>
                                 </tr>
                             </table>
@@ -106,30 +99,57 @@
                     </tr>
                 </table>
 
-                <p style="margin-top: 30px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">Fique de olho na caixa de spam, tá? Você vai receber um e-mail da <b>Mandou Bem</b>, com o código de postagem.</p>
+                <table width="100%" style="max-width: 700px; margin: 22px auto 0;">
+                    <tr>
+                        <td align="left" border="0" style="display: inline-block;">
+                            <table>
+                                <tr>
+                                    <td align="center" valign="middle" style="vertical-align: baseline;">
+                                        <p style="background-color: #000001; margin: auto; color: #ffffff; width: 25px; height: 25px;  border-radius: 50%; padding-top: 4px; display: block; font-weight: bold;">2</p>
+                                    </td>
+                                    <td>
+                                        <p style="margin: 0; margin-left: 5px; font-size: 12px;">
+                                            Vá até uma agência dos Correios e entregue o pacote. Não esqueça de usar o código, hein?
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
 
-                <p style="margin-top: 20px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;"><b>Ah, só um detalhe</b> O código de postagem estará válido após <b>3 horas</b> de você recebê-lo, e ele vale por <b>10 dias corridos</b>.</p>
+                <p style="margin-top: 30px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
+                    Fique de olho na caixa de spam, tá? Você vai receber um e-mail do <b>nosso parceiro</b> com o código de postagem.
+                </p>
 
-                <p style="margin-top: 20px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">Qualquer dúvida, pode contar com a gente. Estamos aqui para te ajudar!</p>
+                <p style="margin-top: 20px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
+                    <b>Ah, só um detalhe:</b> O código de postagem estará válido após <b>3 horas</b> de você recebê-lo, e ele vale por <b>10 dias corridos</b>.
+                </p>
 
-                <p style="margin-top: 50px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: center;">Time Dafiti 🖤</p>
+                <p style="margin-top: 20px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: left;">
+                    Qualquer dúvida, pode contar com a gente. Estamos aqui para te ajudar!
+                </p>
+
+                <p style="margin: 47px 0 0; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: center;">
+                    Time Dafiti 🖤
+                </p>
             </td>
         </tr>
     </table>
     
     <!-- Footer -->
     <footer>
-        <table width="100%" style="display: block; max-width: 700px; text-align: center; margin: 0 auto;">
+        <table width="100%" style="max-width: 700px; text-align: center; margin: 10px auto;">
             <tr>
                 <td>
-                    <img src="https://dafitistatic.dafiti.com.br/cms/newsletter/2024_08_06_15_12_11_details-transacional.png" alt="" width="100%" style="display: block; padding-bottom: 10px; border: 0;">
+                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c014cec820063a41bba/original.png?1728580608" alt="" width="100%" style="display: block; border: 0;">
                 </td>
             </tr>
         </table>
 
-        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 20px 0 25px;">
             <tr>
-                <td style="text-align: center; padding: 10px 0;">
+                <td style="text-align: center;">
                     <p style="font-size: 12px; margin: 0;"> <b>CONTATO</b></p>
                     <p style="font-size: 12px; margin: 0;"> Estamos sempre abertos para falar com você.</p>
                     <p style="font-size: 12px; margin: 0;"> Para enviar suas dúvidas, sugestões ou comentários, contate-nos.</p>
@@ -143,7 +163,7 @@
                     <table>
                         <tr>
                             <td width="40px" style="vertical-align: middle;">
-                                <img src="https://dafitistatic.dafiti.com.br/cms/newsletter/2024_10_08_12_03_16_Group_26651412.png" alt="Icone - Horário de Atendimento" width="100%" style="display: block; margin: 0; padding: 0;">
+                                <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c01c9c56d0063284263/original.png?1728580609" alt="Icone - Horário de Atendimento" width="40px" style="display: block; margin: 0;">
                             </td>
                             <td>
                                 <p style="margin: 0; margin-left: 5px; font-size: 10px;"><b>Horário de Atendimento</b></p>
@@ -156,7 +176,7 @@
                     <table>
                         <tr>
                             <td width="40px" style="vertical-align: middle;">
-                                <img src="https://dafitistatic.dafiti.com.br/cms/newsletter/2024_10_08_12_03_15_Group_26651411.png" alt="Icone - Fale conosco." width="100%" style="display: block; margin: 0; padding: 0; border: 0;">
+                                <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c014bc4510063455c54/original.png?1728580608" alt="Icone - Fale conosco." width="40px" style="display: block; margin: 0; border: 0;">
                             </td>
                             <td>
                                 <p style="margin: 0; margin-left: 5px; font-size: 10px;"><b>Fale conosco.</b> </p>
@@ -170,7 +190,7 @@
                     <table>
                         <tr>
                             <td width="40px" style="vertical-align: middle;">
-                                <img src="https://dafitistatic.dafiti.com.br/cms/newsletter/2024_10_08_12_03_13_Group_26651411_(1).png" alt="Icone - Frete grátis." width="100%" style="display: block; margin: 0; padding: 0; border: 0;">
+                                <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c012bc9450063eb3fce/original.png?1728580609" alt="Icone - Frete grátis." width="40px" style="display: block; margin: 0; border: 0;">
                             </td>
                             <td>
                                 <p style="margin: 0; margin-left: 5px; font-size: 10px;"><b>Frete grátis*</b></p>
@@ -198,30 +218,30 @@
             </tbody>
         </table>
     
-        <table class="responsive-mob" width="100%" style="max-width: 700px; text-align: center; margin: 0 auto;">
+        <table class="responsive-mob" width="100%" style="max-width: 700px; text-align: center; margin: 10px auto;">
             <tr>
-                <td class="card-line card-dafiti" width="85px" style="display: inline-block; padding: 0px 5px; margin: 10px 0;">
+                <td class="card-line card-dafiti" width="85px" style="display: inline-block; padding: 0px 5px; margin: 5px auto;">
                     <a href="https://www.dafiti.com.br/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://dafitistatic.dafiti.com.br/cms/newsletter/2024_08_15_13_49_40_logoborda.png" title="Logotipo Dafiti" alt="Logotipo Dafiti" width="100%" style="display: block; margin: 0 auto; padding: 0; border: 0;">
+                        <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c0149bdc600637c951c/original.png?1728580609" title="Logotipo Dafiti" alt="Logotipo Dafiti" width="85px" style="display: block; margin: 0 auto; padding: 0; border: 0;">
                     </a>
                 </td>
     
-                <td class="card-line pCenter" width="365px" align="left" style="display: inline-block; padding: 5px 0px 5px;">
+                <td class="card-line pCenter" width="365px" align="left" style="display: inline-block; margin: 5px auto;">
                     <p style="margin: 0 10px; font-size: 12px;">Estrada Municipal Luiz Lopes Neto, 617 - Bairro dos Tenentes CEP 37640-000 - Extrema - MG - Brasil</p>
                 </td>
     
-                <td class="redes" width="100px" style="display: inline-block; padding: 5px 0px; margin: 0 auto;">
+                <td class="redes" width="100px" style="display: inline-block; margin: 5px auto;">
                     <table align="center" style="margin: 0 auto;">
                         <tr>
                             <td>
-                                <a width="100%" href="https://www.facebook.com/Dafiti" target="_blank" rel="noopener noreferrer" style="margin: 0; padding: 2px; text-decoration: none;">
-                                    <img src="https://dafitistatic.dafiti.com.br/cms/newsletter/2024_08_15_15_01_52_icone_face.png" title="Facebook Dafiti" alt="Facebook Dafiti" width="25px" style="border: 0;">
+                                <a width="25px" href="https://www.facebook.com/Dafiti" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin: 0; text-decoration: none;">
+                                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c01fac10d006347728e/original.png?1728580609" title="Facebook Dafiti" alt="Facebook Dafiti" width="25px" style="display: block; border: 0; padding: 0 2px;">
                                 </a>
-                                <a width="100%" href="https://www.instagram.com/dafiti/" target="_blank" rel="noopener noreferrer" style="margin: 0; padding: 2px; text-decoration: none;">
-                                    <img src="https://dafitistatic.dafiti.com.br/cms/newsletter/2024_08_15_15_01_51_icone_-_insta.png" title="Instagram Dafiti" alt="Instagram Dafiti" width="25px" style="border: 0;">
+                                <a width="25px" href="https://www.instagram.com/dafiti/" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin: 0; text-decoration: none;">
+                                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c01330b3c00633d5122/original.png?1728580609" title="Instagram Dafiti" alt="Instagram Dafiti" width="25px" style="display: block; border: 0; padding: 0 2px;">
                                 </a>
-                                <a width="100%" href="https://www.tiktok.com/@dafitibr" target="_blank" rel="noopener noreferrer" style="margin: 0; padding: 2px; text-decoration: none;">
-                                    <img src="https://dafitistatic.dafiti.com.br/cms/newsletter/2024_08_15_15_01_49_icone_-_tiktok.png" title="TikTok Dafiti" alt="TikTok Dafiti" width="25px" style="border: 0;">
+                                <a width="25px" href="https://www.tiktok.com/@dafitibr" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin: 0; text-decoration: none;">
+                                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c006b2a590064d69290/original.png?1728580608" title="TikTok Dafiti" alt="TikTok Dafiti" width="25px" style="display: block; border: 0; padding: 0 2px;">
                                 </a>
                             </td>
                         </tr>
@@ -240,12 +260,12 @@
                         <tr>
                             <td bgcolor="#000001" style="padding: 0 5px;">
                                 <a href="https://apps.apple.com/br/app/dafiti-o-melhor-da-moda/id564924168" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                                    <img src="https://dafitistatic.dafiti.com.br/cms/newsletter/2024_10_09_09_04_16_Mac_Branco.svg" title="Apple Store" alt="Apple Store" width="90px" style="display: block; border: 0; background-color: #000001;">
+                                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c01bea6010064467bd6/original.png?1728580608" title="Apple Store" alt="Apple Store" width="90px" style="display: block; border: 0; background-color: #000001;">
                                 </a>
                             </td>
                             <td bgcolor="#000001" style="padding: 0 5px;">
                                 <a href="https://play.google.com/store/apps/details?id=br.com.dafiti&hl=pt_BR&pli=1" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                                    <img src="https://dafitistatic.dafiti.com.br/cms/newsletter/2024_10_09_09_04_14_Google_Branco.svg" title="Google Play" alt="Google Play" width="90px" style="display: block; border: 0; background-color: #000001;">
+                                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/67080c003ccb660063128594/original.png?1728580608" title="Google Play" alt="Google Play" width="90px" style="display: block; border: 0; background-color: #000001;">
                                 </a>
                             </td>
                         </tr>
