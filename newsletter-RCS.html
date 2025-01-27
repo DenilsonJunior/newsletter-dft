@@ -65,71 +65,52 @@
     </header>
 
     <!-- Body -->
-    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 1%;">
+    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 2% 10px;">
         <tr>
             <td>
-                <table border="0" cellspacing="0" cellpadding="0" class="frc">
+                <table>
                     <tr>
-                        <td style="padding-top: 10px; padding-right: 10px" class="frc">
-                            <font class="rfm2"
-                                style="font-size:18px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#333333; text-align:justify; padding-top:10px; text-transform:uppercase">
-                                Oi, {{CUSTOMER_NAME}}!<br />
-                            </font>
-                            <font class="rfm3"
-                                style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; line-height:15px; color:#333333; text-align:justify; line-height: 20px">
-                                Tudo bem? <br /><br />
-
-                                <p style="margin-top: 0px;"><br />
-                                    Em aten&ccedil;&atilde;o &agrave; sua solicita&ccedil;&atilde;o de
-                                    devolu&ccedil;&atilde;o do(s) produto(s) referente(s) ao pedido {{ORDER_NUMBER}},
-                                    informamos que nosso parceiro log&iacute;stico&nbsp;{{DELIVERY_NAME}} est&aacute; a
-                                    caminho do endere&ccedil;o para realizar a coleta.</p>
-
-                                <p style="margin-top: 10px;"><br />
-                                    Endere&ccedil;o da coleta:</p>
-
-                                <p style="margin-top: 10px;">{{DELIVERY_ADDRESS}}</p>
-
-                                <p style="margin-top: 10px;">Importante!</p>
-
-                                <p style="margin-top: 10px;">Em caso de aus&ecirc;ncia do destinat&aacute;rio ou de um respons&aacute;vel, faremos
-                                    novas tentativas de coleta. A coleta s&oacute; ser&aacute; realizada se os itens
-                                    para devolu&ccedil;&atilde;o estiverem devidamente embalados, caso contr&aacute;rio,
-                                    a solicita&ccedil;&atilde;o n&atilde;o ser&aacute; conclu&iacute;da.</p>
-
-                                <p style="margin-top: 10px;"><strong>Aten&ccedil;&atilde;o!!!<br />
-                                        N&atilde;o se esque&ccedil;a de sempre deixar seu telefone e e-mail
-                                        atualizados.<br />
-                                        Caso seja necess&aacute;rio entraremos em contato pelo telefone: (011)
-                                        3053-7500</strong></p>
-
-                            </font>
+                        <td>
+                            <p style="margin: 0; font-size: 16px;">Oi, {{CUSTOMER_NAME}}!</p>
+                            <p style="margin: 0; font-size: 14px;">Tudo bem?</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Em atenção à sua solicitação de devolução do(s) produto(s) referente(s) ao pedido {{ORDER_NUMBER}}, informamos que nosso parceiro logístico {{DELIVERY_NAME}} está a caminho do endereço para realizar a coleta.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Endereço da coleta:</p>
                         </td>
                     </tr>
                 </table>
 
-                <table cellpadding="0" cellspacing="0"
-                    style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px;">
+                <table style="margin: 15px 0;">
                     <tr>
-                        <td style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px" class="frc">
-                            <font class="rfm2"
-                                style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#333333; text-align:justify; padding-top:10px;">
-                                Um abra&ccedil;o,<br />
-                                <br />
-                                Equipe Dafiti<br />
-                                <a href="https://www.dafiti.com.br/?em=EmailTrans_Dafiti.PAP.no_content.no_term&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign=$todayformat(0,yyyy)$_$todayformat(0,MM)$_$todayformat(0,dd)$_LID$launchid()$__$lookup(EMAIL_TYPE)$&utm_content=no_content&utm_term=no_term"
-                                    target="_blank">www.dafiti.com.br</a>
-                            </font>
+                        <td>
+                            {{DELIVERY_ADDRESS}}
                         </td>
                     </tr>
-
-                    <tr>
-                        <td height="4px">
-                        </td>
-                    </tr>
-
                 </table>
 
+                <table>
+                    <tr>
+                        <td>
+                            <p style="margin: 0; font-size: 14px;">Importante!</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Em caso de ausência do destinatário ou de um responsável, faremos novas tentativas de coleta. A coleta só será realizada se os itens para devolução estiverem devidamente embalados, caso contrário, a solicitação não será concluída.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;"><b>Atenção!!!</b></p>
+                            <p style="margin: 0; font-size: 14px;"><b>Não se esqueça de sempre deixar seu telefone e e-mail atualizados.</b></p>
+                            <p style="margin: 0; font-size: 14px;"><b>Caso seja necessário entraremos em contato pelo telefone: (011) 3053-7500</b></p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Um abraço,</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- ABRAÇOS DAFITI -->
+                <table width="100%" align="center" style="text-align: center; margin-top: 20px;">
+                    <tr>
+                        <td>
+                            <p style="text-align: center; font-size: 13px;">
+                                Abraços, <b>Time Dafiti</b> 🖤
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- FIM ABRAÇOS DAFITI -->
             </td>
         </tr>
     </table>

@@ -65,57 +65,51 @@
     </header>
 
     <!-- Body -->
-    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 1%;">
+    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 2% 10px;">
         <tr>
             <td>
-                <table border="0" cellspacing="0" cellpadding="0" class="frc">
+                <table>
                     <tr>
-                        <td style="padding-right: 10px; padding-bottom: 10px"
-                            class="frc">
-                            <p class="rfm2"
-                                style="font-size:18px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#333333; text-align:justify; text-transform:uppercase">
-                                Ol&Aacute; {{CUSTOMER_NAME}}, <br /></p>
+                        <td>
+                            <p style="margin: 0; font-size: 16px;">OlÁ {{CUSTOMER_NAME}},</p>
+                            <p style="margin: 15px 0 10px; font-size: 14px;"><b>Recebemos seu pedido de devolução dos seguintes produtos:</b></p>
                         </td>
                     </tr>
                 </table>
-                <table border="0" cellspacing="0" cellpadding="0" class="frc">
+                <table>
                     <tr>
-                        <td style="padding-top: 10px; padding-right: 10px; padding-bottom:8px"
-                            class="frc">
-                            <p class="rfm3"
-                                style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; line-height:15px; color:#333333; text-align:justify; line-height: 20px">
-                                <b>Recebemos seu pedido de devolu&ccedil;&atilde;o dos seguintes
-                                    produtos:</b></p>
+                        <td>
+                            {{PRODUCTS}}
                         </td>
                     </tr>
                 </table>
-                {{PRODUCTS}}
-                <table cellpadding="0" cellspacing="0"
-                    style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px; padding-top: 35px">
+                <table>
                     <tr>
-                        <td style="padding-top: 10px; padding-bottom: 10px" class="frc">
-                            <p class="rfm3"
-                                style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; line-height:15px; color:#333333; text-align:justify; line-height: 20px">
-                                <b>Olha como &eacute; f&aacute;cil fazer sua
-                                    devolu&ccedil;&atilde;o. A Dafiti simplifica:</b></p>
+                        <td>
+                            <p style="margin: 15px 0 0px; font-size: 14px;"><b>Olha como é fácil fazer sua devolução. A Dafiti simplifica:</b></p>
+                            <ol style="padding: 0 0 0 20px; font-size: 14px;">
+                                <li>
+                                    <p style="margin: 5px 0 0; font-size: 14px;">É só embalar direitinho o produto na embalagem da Dafiti com as etiquetas e manuais caso possuir (se já não tiver mais o saco original, pode embalar num envelope, papel pardo ou um saco preto descartável);</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 5px 0 0; font-size: 14px;">Agora é só aguardar! A coleta será realizada no mesmo endereço que o item foi entregue.</p>
+                                </li>
+                            </ol>
                         </td>
                     </tr>
                 </table>
-                <table cellpadding="0" cellspacing="0"
-                    style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:14px;">
+                <!-- ABRAÇOS DAFITI -->
+                <table width="100%" align="center" style="text-align: center; margin-top: 20px;">
                     <tr>
-                        <td style="vertical-align:top; padding-left:10px;">
-                            <p>1 - &Eacute; s&oacute; embalar direitinho o produto na embalagem da
-                                Dafiti com as etiquetas e manuais caso possuir (se j&aacute;
-                                n&atilde;o tiver mais o saco original, pode embalar num envelope,
-                                papel pardo ou um saco preto descart&aacute;vel);<br />2 - Agora
-                                &eacute; s&oacute; aguardar! A coleta ser&aacute; realizada no mesmo
-                                endere&ccedil;o que o item foi entregue.</p>
+                        <td>
+                            <p style="text-align: center; font-size: 13px;">
+                                Abraços, <b>Time Dafiti</b> 🖤
+                            </p>
                         </td>
                     </tr>
                 </table>
-                <br>Um abraço,<br><br>Equipe Dafiti<br>
-                <a href="https://www.dafiti.com.br/?em=EmailTrans_Dafiti.{{EMAIL_TYPE}}.no_content.no_term&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign={{now format='yyyy_MM_dd'}}_PINPOINT__{{EMAIL_TYPE}}&utm_content=no_content&utm_term=no_term" target="_blank">www.dafiti.com.br</a>
+                <!-- FIM ABRAÇOS DAFITI -->
+
             </td>
         </tr>
     </table>

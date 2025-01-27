@@ -65,178 +65,99 @@
     </header>
 
     <!-- Body -->
-    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 1%;">
+    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 2% 10px;">
         <tr>
             <td>
-                <table width="680" border="0" cellspacing="0" cellpadding="0" align="center" class="frc nomob">
+                <!-- TITULO BODY -->
+                <table width="100%" align="center" style="margin: 0 auto;">
                     <tr>
-                        <td width="680" height="165"><img
-                                src="http://staticlocal.dafiti.com.br/cms/mkt/news/February2015/email-transacional-valetroca_02.png"
-                                href="https://secure.dafiti.com.br/customer/vouchers/index/?em=EmailTrans_Dafiti&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign=Vale-minhaconta" width=" 680" height="165" style="display:block" border="0"
-                                alt="Seu vale-troca chegou"></td>
-                    </tr>
-                    <tr>
-                        <td height="5px">
+                        <td>
+                            <a style="width: 300px; margin: 0 auto; text-decoration: none; color: #303030;"
+                                href="https://secure.dafiti.com.br/customer/vouchers/index/?em=EmailTrans_Dafiti&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign={{now format='yyyy_MM_dd'}}_PINPOINT__{{EMAIL_TYPE}}&utm_content=vales&utm_term=acompanhe_seu_pedido" target="_blank">
+                                <p style="width: 300px; text-align: center; font-size: 25px; border-bottom: 1.5px solid #303030; margin: 0 auto; padding-bottom: 10px; line-height: 1.1;">O SEU VALE-TROCA <br><b>CHEGOU</b></p>
+                            </a>
                         </td>
                     </tr>
                 </table>
-                <!-- /Desktop status -->
-                <!-- Content 1 -->
-                <table border="0" cellspacing="0" cellpadding="0" class="frc">
+                <!-- FIM TITULO BODY -->
+                <table>
                     <tr>
-                        <td style="padding-top: 10px; padding-right: 10px; padding-bottom: 25px" class="frc">
-                            <font class="rfm2"
-                                style="font-size:18px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#222222; text-align:justify; padding-top:10px; text-transform:uppercase">
-                                Ol&Aacute;, {{CUSTOMER_NAME}} <br />
-                            </font>
-                            <font class="rfm3"
-                                style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; line-height:15px; color:#555555; text-align:justify; line-height: 20px">
-                                Agora disponibilizamos as informações do seu vale-troca direto na sua
-                                conta. Basta clicar no botão abaixo para ver todas informações.
-                                </br> Se preferir, já vamos deixar as informações aqui mesmo para você
-                                usar na sua próxima compra com a gente.
-                            </font>
+                        <td>
+                            <p style="font-size: 16px; margin: 30px 0 0;">OlÁ, {{CUSTOMER_NAME}}</p>
+                            <p style="font-size: 14px; margin: 0;">Agora disponibilizamos as informações do seu vale-troca direto na sua conta. Basta clicar no botão abaixo para ver todas informações.</p>
+                            <p style="font-size: 14px; margin: 0;">Se preferir, já vamos deixar as informações aqui mesmo para você usar na sua próxima compra com a gente.</p>
                         </td>
                     </tr>
                 </table>
-
-                {{VOUCHERS}}
-                <br />
-
-                <table width="100%" align="center" cellpadding="0" cellspacing="0" class="frc">
-                    <tr id="carrinho">
-                        <td width="100%">
-                            <table style="margin: 0 auto;" cellpadding="0" align="center" cellspacing="0" class="frc">
-                                <tr>
-                                    <td width="100%">
-                                        <table cellpadding="0" align="center" cellspacing="0"
-                                            class="frc">
-                                            <tr>
-                                                <td>
-                                                    <table cellpadding="0" cellspacing="0" class="frc">
-                                                        <tr>
-                                                            <td class="frc"
-                                                                style="border-color:#00B07A;font-size: 1.499em; padding:5px;">
-                                                                <a href="https://secure.dafiti.com.br/customer/vouchers/index/?em=EmailTrans_Dafiti&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign={{now format='yyyy_MM_dd'}}_PINPOINT__{{EMAIL_TYPE}}&utm_content=vales&utm_term=acompanhe_seu_pedido"
-                                                                    target="_blank"
-                                                                    style="text-decoration:none; color:#ffffff ">
-                                                                    <div
-                                                                        style="background-color: #00B07A; text-align: center; font-family: Roboto, Trebuchet MS, Arial, sans-serif; border:3px; border-style:solid; padding:5px 10px 5px 10px;">
-                                                                        Ver meus vales &#9654;</div>
-                                                                </a><br>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
+                <table style="margin: 20px 0 0;">
+                    <tr>
+                        <td>
+                            {{VOUCHERS}}
+                        </td>
+                    </tr>
+                </table>
+                <!-- BOTÃO PADRONIZADO -->
+                <table width="100%" height="45" bgcolor="#000000" align="center" style="max-width: 700px; margin: 20px auto 0 auto; padding: 5px 15px; border-radius: 90px; text-align: center;">
+                    <tr>
+                        <td align="center" border="0">
+                            <table style="width: 100%;">
+                                <tr align="center">
+                                    <td>
+                                        <a href="https://secure.dafiti.com.br/customer/vouchers/index/?em=EmailTrans_Dafiti&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign={{now format='yyyy_MM_dd'}}_PINPOINT__{{EMAIL_TYPE}}&utm_content=vales&utm_term=acompanhe_seu_pedido" target="_blank" style="text-decoration:none; color:#ffffff; width: 100%;">
+                                            <p style="color: #FFFFFF; margin: 0; font-size: 15px;font-weight: 700;">VER MEUS VALES</p>
+                                        </a>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                 </table>
-                
-                <table cellpadding="0" cellspacing="0"
-                    style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px; padding-top: 15px">
+                <!-- FIM BOTÃO PADRONIZADO -->
+                <table>
                     <tr>
-                        <td style="padding-top: 10px; padding-bottom: 10px" class="frc">
-                            <font class="rfm3"
-                                style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; line-height:15px; color:#333333; text-align:justify; line-height: 20px">
-                                <b>
-                                    &Eacute; muito f&aacute;cil realizar a troca, olha s&oacute;:</b>
-                            </font>
+                        <td>
+                            <p style="margin: 20px 0 0; font-size: 14px;"><b>É muito fácil realizar a troca, olha só:</b></p>
+                            <ul style="padding: 0 0 0 15px;">
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">Seu vale estará ativo em até 1 hora após o envio deste e-mail;</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">A utilização do vale-troca está atrelada ao CPF do titular do pedido;</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">Se a nova compra superar o valor do vale-troca, o pagamento pode ser complementado com cartão ou boleto direto no site;</p>
+                                </li>
+                            </ul>
+                            <p style="margin: 40px 0 0; font-size: 14px;"><b>Para utilizar o Vale:</b></p>
+                            <ul style="padding: 0 0 0 15px;">
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">Escolha o produto, coloque-o no carrinho, clique em Concluir Compra e identifique-se;</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">Insira o código do vale-troca no campo <b>"Cupons e Vales"</b> e clique em <b>"Aplicar"</b>;</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">O valor correspondente ao Vale-Troca será creditado no valor total do pedido.</p>
+                                </li>
+                            </ul>
+
+                            <p style="margin: 30px 0 0; font-size: 14px;">Se tiver qualquer dúvida, entre em contato por chat ou telefone. Estamos disponíveis 24h por dia, todos os dias, pra te atender!</p>
+                            <p style="margin: 30px 0 0; font-size: 14px; text-align: center;">Obrigado,</p>
                         </td>
                     </tr>
                 </table>
-                <table cellpadding="0" cellspacing="0"
-                    style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px;">
+                <!-- ABRAÇOS DAFITI -->
+                <table width="100%" align="center" style="text-align: center; margin-top: 0px;">
                     <tr>
-                        <td width="20" style="vertical-align:top; padding-left:10px;">&bull;</td>
-                        <td style="padding-bottom:10px;">Seu vale estar&aacute; ativo em at&eacute; 1
-                            hora
-                            ap&oacute;s o envio deste e-mail;</td>
-                    </tr>
-                    <tr>
-                        <td width="20" style="vertical-align:top; padding-left:10px;">&bull;</td>
-                        <td style="padding-bottom:10px;">A utiliza&ccedil;&atilde;o do vale-troca
-                            est&aacute; atrelada ao CPF do titular do pedido;</td>
-                    </tr>
-                    <tr>
-                        <td width="20" style="vertical-align:top; padding-left:10px;">&bull;</td>
-                        <td style="padding-bottom:10px;">Voc&ecirc; n&atilde;o precisa utiliz&aacute;-lo
-                            de
-                            uma vez: o saldo restante permanecer&aacute; dispon&iacute;vel para
-                            utiliza&ccedil;&atilde;o durante o per&iacute;odo de validade do vale-troca;
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="20" style="vertical-align:top; padding-left:10px;">&bull;</td>
-                        <td style="padding-bottom:10px;">Se a nova compra superar o valor do vale-troca,
-                            o
-                            pagamento pode ser complementado com cart&atilde;o ou boleto direto no site;
+                        <td>
+                            <p style="text-align: center; font-size: 13px;">
+                                Abraços, <b>Time Dafiti</b> 🖤
+                            </p>
                         </td>
                     </tr>
                 </table>
-                <table cellpadding="0" cellspacing="0"
-                    style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px; padding-top: 35px">
-                    <tr>
-                        <td style="padding-top: 10px; padding-bottom: 10px" class="frc">
-                            <font class="rfm3"
-                                style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; line-height:15px; color:#333333; text-align:justify; line-height: 20px">
-                                <b>
-                                    Para utilizar o Vale:</b>
-                            </font>
-                        </td>
-                    </tr>
-                </table>
-                <table cellpadding="0" cellspacing="0"
-                    style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px;">
-                    <tr>
-                        <td width="20" style="vertical-align:top; padding-left:10px;">&bull;</td>
-                        <td style="padding-bottom:10px;">Escolha o produto, coloque-o no carrinho,
-                            clique em
-                            Concluir Compra e identifique-se;</td>
-                    </tr>
-                    <tr>
-                        <td width="20" style="vertical-align:top; padding-left:10px;">&bull;</td>
-                        <td style="padding-bottom:10px;">Insira o c&oacute;digo do vale-troca no campo
-                            &quot;<strong>Cupons e Vales</strong>&quot; e clique em
-                            &quot;<strong>Aplicar</strong>&quot;;</td>
-                    </tr>
-                    <tr>
-                        <td width="20" style="vertical-align:top; padding-left:10px;">&bull;</td>
-                        <td style="padding-bottom:10px;">O valor correspondente ao Vale-Troca
-                            ser&aacute;
-                            creditado no valor total do pedido.</td>
-                    </tr>
-                </table>
-                <!-- Content 2 -->
-                <table cellpadding="0" cellspacing="0"
-                    style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px;">
-                    <tr>
-                        <td style="padding-top: 40px; padding-right: 10px; padding-bottom: 10px"
-                            class="frc">
-                            <font class="rfm2"
-                                style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#222222; text-align:justify; padding-top:10px;">
-                                Se tiver qualquer d&uacute;vida, entre em contato por chat ou telefone.
-                                Estamos dispon&iacute;veis 24h por dia, todos os dias, pra te
-                                atender!<br />
-                                <br />
-                                Obrigado,<br />
-                                <br />
-                                Equipe Dafiti<br />
-                                <a href="http://www.dafiti.com.br/?em=EmailTrans_Dafiti.valetroca.no_content.no_term&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign=valetroca&utm_content=no_content&utm_term=trans_valetroca"
-                                    target="_blank">www.dafiti.com.br</a>
-                            </font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="4px">
-                        </td>
-                    </tr>
-                </table>
-                <!-- /Content 2 -->
+                <!-- FIM ABRAÇOS DAFITI -->
+
             </td>
         </tr>
     </table>

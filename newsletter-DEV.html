@@ -65,57 +65,79 @@
     </header>
 
     <!-- Body -->
-    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 1%;">
+    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 2% 10px;">
         <tr>
             <td>
-                
-                <table border="0" cellspacing="0" cellpadding="0" class="frc">
+                <table align="center" style="margin: 0 auto;">
                     <tr>
-                        <td align="center" width="100%" style="padding-top:0; padding-bottom:10px" class="frc">
-                            <img style="margin: 0 auto;" alt="Devolução Efetuada" src="https://static.cdn.responsys.net/i5/responsysimages/content/dafitibr/4%20-%20Recebemos%20Sua%20Solicita%C3%A7%C3%A3o.jpg" />
-                            <font class="rfm3" style="font-size:14px;font-family:Roboto,Trebuchet MS,Arial,sans-serif;line-height:15px;color:#333333;text-align:left; line-height:20px">
-                                <p style="margin-top: 50px;">Oi, {{CUSTOMER_NAME}}!</p>
-                                <p style="margin-top: 10px;">Temos boas notícias!</p>
-                                <p style="margin-top: 10px;">O(s) item(ns) do seu pedido {{ORDER_NUMBER}}, foi(ram) devolvido(s) ao nosso Centro de Distribuição.</p>
-                                <p style="margin-top: 10px;">Nossa equipe de controle de qualidade está analisando a devolução. Esse processo tem o prazo de 2 dias úteis para ser concluído.</p>
-                                <p style="margin-top: 10px;">Confira o(s) produto(s) que retornou(ram):</p>
-                                <p style="margin-top: 10px;">{{PRODUCTS}}</p>
-                                <p style="margin-top: 10px;"><strong>IMPORTANTE:&nbsp;&nbsp;</strong>Acompanhe o prazo para a liberação da sua contrapartida conforme o método de pagamento escolhido.</p>
-                                <p style="margin-top: 10px;"><strong>CARTÃO DE CRÉDITO</strong></p>
-                                <p style="margin-top: 10px;">Para compras realizadas com cartão de crédito, o estorno é solicitado junto à administradora do cartão e pode levar de uma a duas faturas para que seja efetuado.</p>
-                                <p style="margin-top: 10px;"><strong>VALE COMPRA</strong></p>
-                                <p style="margin-top: 10px;">Caso opte por um vale, o mesmo será liberado em até 24 horas após o retorno do item devolvido. Você pode utilizá-lo em qualquer produto no site. Se o valor do produto escolhido for inferior ao do vale, poderá solicitar o restante do dinheiro ou utilizar o valor remanescente do vale. Se o valor do produto escolhido for superior ao do vale, deverá realizar o pagamento da diferença escolhendo uma das formas de pagamento no site.</p>
-                                <p style="margin-top: 10px;"><strong>REENVIO DO PRODUTO</strong></p>
-                                <p style="margin-top: 10px;">Se você optou pelo reenvio do produto, ele será despachado em até 02 dias após a liberação no centro de distribuição.</p>
-                                <p style="margin-top: 10px;"><strong>BOLETO</strong></p>
-                                <p style="margin-top: 10px;">Se você pagou com boleto, o valor pago pelo produto será depositado em conta em até 5 dias úteis.</p>
-                                <p style="margin-top: 10px;">Importante! Para que possamos fazer o depósito, os dados bancários devem ser do titular do cadastro em nosso site.</p>
-                                <p style="margin-top: 10px;">Sugerimos que confira os números de agência e conta com dígito (se houver) no seu cartão. Se você possuir conta conjunta, os dados informados devem ser do primeiro titular do cartão, caso contrário, ocorrerá atraso na restituição em razão de dados incorretos.</p>
-                                <p style="margin-top: 10px;">Caso não tenha conta bancária em seu nome e CPF, podemos efetuar uma ordem de pagamento pelo Banco Santander.</p>
-                                <p style="margin-top: 30px;">Fique à vontade para consultar o seu processo a qualquer momento clicando no link abaixo.</p>
-                                <p style="margin-top: 10px;">https://secure.dafiti.com.br/customer/account/home/</p>
-                                <p style="margin-top: 10px;">Caso você tenha alguma dúvida e queira falar conosco, é só clicar no link abaixo e acessar nosso time de atendimento.</p>
-                                <p style="margin-top: 10px;">https://www.dafiti.com.br/atendimento/</p>
-                                <p style="margin-top: 10px;"><strong>Atenção!!!<br />Não se esqueça de sempre deixar seu telefone e e-mail atualizados.<br />Caso seja necessário entraremos em contato pelo telefone: (011) 3053-7500</strong></p>
-                            </font>
+                        <td>
+                            <img src="https://static.cdn.responsys.net/i5/responsysimages/content/dafitibr/4%20-%20Recebemos%20Sua%20Solicita%C3%A7%C3%A3o.jpg" alt="" style="margin: 0 auto; max-width: 100%;">
                         </td>
-                    </tr>
-                </table>
-                <table cellpadding="0" cellspacing="0" style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px;">
-                    <tr>
-                        <td style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px" class="frc">
-                            <font class="rfm2" style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#333333;  padding-top:30px;">
-                                Um abraço,<br /><br />
-                                Equipe Dafiti<br />
-                                <a href="https://www.dafiti.com.br/?em=EmailTrans_Dafiti.{{EMAIL_TYPE}}.no_content.no_term&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign={{now format='yyyy_MM_dd'}}_LID__{{EMAIL_TYPE}}&utm_content=no_content&utm_term=no_term" target="_blank">www.dafiti.com.br</a>
-                            </font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="4px"></td>
                     </tr>
                 </table>
 
+                <table>
+                    <tr>
+                        <td>
+                            <p style="margin: 20px 0 0; font-size: 16px;">Oi, {{CUSTOMER_NAME}}!</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Temos boas notícias!</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">O(s) item(ns) do seu pedido {{ORDER_NUMBER}}, foi(ram) devolvido(s) ao nosso Centro de Distribuição.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Nossa equipe de controle de qualidade está analisando a devolução. Esse processo tem o prazo de 2 dias úteis para ser concluído.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Confira o(s) produto(s) que retornou(ram):</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="margin: 15px 0 0;">
+                    <tr>
+                        <td>
+                            {{PRODUCTS}}
+                        </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>
+                            <p style="margin: 15px 0 0; font-size: 14px;"><b>IMPORTANTE:</b> Acompanhe o prazo para a liberação da sua contrapartida conforme o método de pagamento escolhido.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;"><b>CARTÃO DE CRÉDITO</b></p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Para compras realizadas com cartão de crédito, o estorno é solicitado junto à administradora do cartão e pode levar de uma a duas faturas para que seja efetuado.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;"><b>VALE COMPRA</b></p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Caso opte por um vale, o mesmo será liberado em até 24 horas após o retorno do item devolvido. Você pode utilizá-lo em qualquer produto no site. Se o valor do produto escolhido for inferior ao do vale, poderá solicitar o restante do dinheiro ou utilizar o valor remanescente do vale. Se o valor do produto escolhido for superior ao do vale, deverá realizar o pagamento da diferença escolhendo uma das formas de pagamento no site.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;"><b>REENVIO DO PRODUTO</b></p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Se você optou pelo reenvio do produto, ele será despachado em até 02 dias após a liberação no centro de distribuição.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;"><b>BOLETO</b></p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Se você pagou com boleto, o valor pago pelo produto será depositado em conta em até 5 dias úteis.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Importante! Para que possamos fazer o depósito, os dados bancários devem ser do titular do cadastro em nosso site.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Sugerimos que confira os números de agência e conta com dígito (se houver) no seu cartão. Se você possuir conta conjunta, os dados informados devem ser do primeiro titular do cartão, caso contrário, ocorrerá atraso na restituição em razão de dados incorretos.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Caso não tenha conta bancária em seu nome e CPF, podemos efetuar uma ordem de pagamento pelo Banco Santander.</p>
+                            <p style="margin: 35px 0 0; font-size: 14px;">Fique à vontade para consultar o seu processo a qualquer momento clicando no link abaixo.</p>
+                            <a href="https://secure.dafiti.com.br/customer/account/home/" target="_blank" rel="noopener noreferrer">
+                                <p style="margin: 15px 0 0; font-size: 14px; color: #000001;">https://secure.dafiti.com.br/customer/account/home/</p>
+                            </a>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Caso você tenha alguma dúvida e queira falar conosco, é só clicar no link abaixo e acessar nosso time de atendimento.</p>
+                            <a href="https://www.dafiti.com.br/atendimento/" target="_blank" rel="noopener noreferrer">
+                                <p style="margin: 15px 0 0; font-size: 14px; color: #000001;">https://www.dafiti.com.br/atendimento/</p>
+                            </a>
+                            <p style="margin: 15px 0 0; font-size: 14px;"><b>Atenção!!!</b></p>
+                            <p style="margin: 0; font-size: 14px;"><b>Não se esqueça de sempre deixar seu telefone e e-mail atualizados.</b></p>
+                            <p style="margin: 0; font-size: 14px;"><b>Caso seja necessário entraremos em contato pelo telefone: (011) 3053-7500</b></p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Um abraço,</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- ABRAÇOS DAFITI -->
+                <table width="100%" align="center" style="text-align: center; margin-top: 20px;">
+                    <tr>
+                        <td>
+                            <p style="text-align: center; font-size: 13px;">
+                                Abraços, <b>Time Dafiti</b> 🖤
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- FIM ABRAÇOS DAFITI -->
             </td>
         </tr>
     </table>

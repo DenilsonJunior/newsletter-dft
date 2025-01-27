@@ -65,73 +65,52 @@
     </header>
 
     <!-- Body -->
-    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 1%;">
+    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 2% 10px;">
         <tr>
             <td>
+                <table>
+                    <tr>
+                        <td>
+                            <p style="margin: 0; font-size: 16px;">Oi, {{CUSTOMER_NAME}}!</p>
+                            <p style="margin: 0; font-size: 14px;">No dia  {{DELIVERY_DATE}} fizemos uma tentativa de entrega e não conseguimos localizar o seu endereço. Estes dados estão corretos?</p>
+                        </td>
+                    </tr>
+                </table>
+                <table style="margin: 15px 0 0;">
+                    <tr>
+                        <td>
+                            {{DELIVERY_NAME}}
+                        </td>
+                    </tr>
+                </table>
+                <table style="margin: 15px 0 0;">
+                    <tr>
+                        <td>
+                            {{DELIVERY_ADDRESS}}
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Por favor, ligue para a nossa Central de Atendimento (11) 3053-7500 e dê alguns pontos de referência que possam facilitar o processo de entrega.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Faremos uma nova tentativa e, se a entrega não for realizada, o pedido retornará ao nosso Centro de Distribuição e seu reenvio estará sujeito à disponibilidade dos produtos em nosso estoque.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">{{#eq IS_MARKETPLACE "1"}} Marketplace: A responsabilidade da venda é da Dafiti e a entrega é feita pelo parceiro. {{else}} {{/eq}}</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- ABRAÇOS DAFITI -->
+                <table width="100%" align="center" style="text-align: center; margin-top: 20px;">
+                    <tr>
+                        <td>
+                            <p style="text-align: center; font-size: 13px;">
+                                Abraços, <b>Time Dafiti</b> 🖤
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- FIM ABRAÇOS DAFITI -->
                 
-                <table class="frc" border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                        <tr>
-                            <td style="padding-top: 10px; padding-right: 10px;" class="frc">
-                                <font class="rfm2" style="font-size: 18px; font-family: Roboto,Trebuchet MS,Arial,sans-serif; color: rgb(51, 51, 51); text-align: justify; padding-top: 10px; text-transform: uppercase;">
-                                    Oi, {{CUSTOMER_NAME}}! <br>
-                                </font>
-                                <font class="rfm2" style="font-size: 14px; font-family: Roboto,Trebuchet MS,Arial,sans-serif; color: rgb(51, 51, 51); text-align: justify; padding-top: 10px;">
-                                    No dia&nbsp;
-                                </font>
-                                <font class="rfm2" style="font-size: 14px; font-family: Roboto,Trebuchet MS,Arial,sans-serif; color: rgb(51, 51, 51); text-align: justify; padding-top: 10px;">
-                                    <b>{{DELIVERY_DATE}}</b>
-                                </font>
-                                <font class="rfm2" style="font-size: 14px; font-family: Roboto,Trebuchet MS,Arial,sans-serif; color: rgb(51, 51, 51); text-align: justify; padding-top: 10px;">
-                                    fizemos uma tentativa de entrega e n&atilde;o conseguimos localizar o seu endere&ccedil;o. Estes dados est&atilde;o corretos?<br>
-                                </font> <br>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <font class="rfm3" style="font-size: 14px; font-family: Roboto,Trebuchet MS,Arial,sans-serif; color: rgb(51, 51, 51); text-align: justify; line-height: 10px;">
-                    {{DELIVERY_NAME}}
-                </font><br>
-                <br>
-                <font class="rfm3" style="font-size: 14px; font-family: Roboto,Trebuchet MS,Arial,sans-serif; color: rgb(51, 51, 51); text-align: justify; line-height: 10px;">
-                    {{DELIVERY_ADDRESS}}
-                </font>
-                <table style="font-family: Roboto,Trebuchet MS,Arial,sans-serif; font-size: 12px;" cellpadding="0" cellspacing="0">
-                    <tbody>
-                        <tr>
-                            <td style="padding-top: 22px; padding-right: 10px; padding-bottom: 10px;" class="frc">
-                                <font class="rfm2" style="font-size: 14px; font-family: Roboto,Trebuchet MS,Arial,sans-serif; color: rgb(51, 51, 51); text-align: justify; padding-top: 10px;">
-                                    Por favor, ligue para a nossa Central de Atendimento (11) 3053-7500 e d&ecirc; alguns pontos de refer&ecirc;ncia que possam facilitar o processo de entrega.<br><br>
-                                    Faremos uma nova tentativa e, se a entrega n&atilde;o for realizada, o pedido retornar&aacute; ao nosso Centro de Distribui&ccedil;&atilde;o e seu reenvio estar&aacute; sujeito &agrave; disponibilidade dos produtos em nosso estoque.
-                                    <table cellpadding="0" cellspacing="0" style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-top: 30px; padding-right:10px; padding-bottom: 10px" class="frc">
-                                                    <font class="rfm2" style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#333333; text-align:justify; padding-top:10px;">
-                                                        {{#eq IS_MARKETPLACE "1"}}
-                                                        Marketplace: A responsabilidade da venda &eacute; da Dafiti e a entrega &eacute; feita pelo parceiro.
-                                                        {{else}}
-                                                        {{/eq}}
-                                                    </font>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td height="4px"></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <br>
-                                    Um abraço,<br><br>
-                                    Equipe Dafiti<br>
-                                    <a href="https://www.dafiti.com.br/?em=EmailTrans_Dafiti.DCN.no_content.no_term&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign={{now format='yyyy_MM_dd'}}_PINPOINT__{{EMAIL_TYPE}}&utm_content=no_content&utm_term=no_term" target="_blank">www.dafiti.com.br</a>
-                                </font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="4"></td>
-                        </tr>
-                    </tbody>
-                </table>
             </td>
         </tr>
     </table>

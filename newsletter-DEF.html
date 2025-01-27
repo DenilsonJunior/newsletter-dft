@@ -65,105 +65,97 @@
     </header>
 
     <!-- Body -->
-    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 1%;">
+    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 2% 10px;">
         <tr>
             <td>
-
-                <!-- Content 1 -->
-                <table border="0" cellspacing="0" cellpadding="0" class="frc">
+                <table>
                     <tr>
-                        <td style="padding-top: 10px; padding-right: 10px" class="frc">
-                            <font class="rfm2"
-                                style="font-size:18px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#333333; text-align:justify; padding-top:10px; text-transform:uppercase">
-                                Oi, {{CUSTOMER_NAME}}!<br />
-                            </font>
-                            <font class="rfm3"
-                                style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; line-height:15px; color:#333333; text-align:justify; line-height: 20px">
-                                Tudo bem? <br /><br />
-
-                                <p style="margin-top: 10px;">Poxa, que pena que n&atilde;o deu certo seu look. Mas olha que legal! Voc&ecirc;
-                                    j&aacute; escolheu um ponto para realizar a devolu&ccedil;&atilde;o dos itens ;)</p>
-
-                                <p style="margin-top: 10px;">O ponto escolhido para devolu&ccedil;&atilde;o foi:</p>
-
-                                <p style="margin-top: 10px;">
-                                    {{DELIVERY_NAME}}<br />
-                                    {{DELIVERY_ADDRESS}} <br />
-                                </p>
-
-                                <p style="margin-top: 10px;">Confira os produtos que ser&atilde;o devolvidos:</p>
-
-                                <p style="margin-top: 10px;">{{PRODUCTS}}</p>
-
-                                <p style="margin-top: 10px;">A devolu&ccedil;&atilde;o &eacute; bem simples! S&oacute; seguir as
-                                    instru&ccedil;&otilde;es abaixo:</p>
-
-                                <p style="margin-top: 10px;">1) Embale direitinho o produto, junto com as etiquetas, manuais e acess&oacute;rios
-                                    que foram entregues com o produto.</p>
-
-                                <p style="margin-top: 10px;">2) N&atilde;o se esque&ccedil;a de colocar a nota fiscal na parte externa da
-                                    embalagem.</p>
-
-                                <p style="margin-top: 10px;">3) Aguarde o envio do c&oacute;digo de postagem pelo nosso parceiro logistico.&nbsp;
-                                </p>
-
-                                <p style="margin-top: 10px;">4) Leve seu produto em at&eacute; 10 dias &uacute;teis ao local escolhido.</p>
-
-                                <p style="margin-top: 10px;">5) Ap&oacute;s o recebimento do produto em nosso Centro de
-                                    Distribui&ccedil;&atilde;o, enviaremos novas informa&ccedil;&otilde;es por e-mail.
-                                </p>
-
-                                <p style="margin-top: 10px;">Fica Ligado!</p>
-
-                                <p style="margin-top: 10px;">- A solicita&ccedil;&atilde;o de Troca/ Devolu&ccedil;&atilde;o de produto com
-                                    defeito deve ser realizada em at&eacute; 90 (noventa) dias corridos ap&oacute;s o
-                                    recebimento do seu pedido. N&atilde;o ser&atilde;o aceitas
-                                    Trocas/Devolu&ccedil;&otilde;es de produtos com evid&ecirc;ncias de mau uso.</p>
-
-                                <p style="margin-top: 10px;">- A solicita&ccedil;&atilde;o de devolu&ccedil;&atilde;o de produtos recebidos com
-                                    embalagem avariada ou produto danificado deve ser realizada em at&eacute; 48h a
-                                    contar do recebimento.</p>
-
-                                <p style="margin-top: 10px;">Dica: Sabia que temos uma maneira bem simples de efetuar trocas atrav&eacute;s do
-                                    nosso site? Voc&ecirc; vai se surpreender com a rapidez!</p>
-
-                                <p style="margin-top: 10px;"><strong>Aten&ccedil;&atilde;o!!!<br />
-                                        N&atilde;o se esque&ccedil;a de sempre deixar seu telefone e e-mail
-                                        atualizados.<br />
-                                        Caso seja necess&aacute;rio entraremos em contato pelo telefone: (011)
-                                        3053-7500</strong></p>
-
-                                <p style="margin-top: 10px;">Estamos &agrave; sua disposi&ccedil;&atilde;o!</p>
-
-                            </font> <br /><br />
+                        <td>
+                            <p style="margin: 0; font-size: 16px;">Oi, {{CUSTOMER_NAME}}!</p>
+                            <p style="margin: 0; font-size: 14px;">Tudo bem?</p>
+                            <p style="margin: 25px 0 0; font-size: 14px;">Poxa, que pena que não deu certo seu look. Mas olha que legal! Você já escolheu um ponto para realizar a devolução dos itens ;)</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">O ponto escolhido para devolução foi:</p>
                         </td>
                     </tr>
                 </table>
-
-                <!-- Content 2 -->
-                <table cellpadding="0" cellspacing="0"
-                    style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px;">
+                <table style="margin: 15px 0 0;">
                     <tr>
-                        <td style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px" class="frc">
-
-
-                            <font class="rfm2"
-                                style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#333333; text-align:justify; padding-top:10px;">
-                                Um abra&ccedil;o,<br />
-                                <br />
-                                Equipe Dafiti<br />
-                                <a href="https://www.dafiti.com.br/?em=EmailTrans_Dafiti.{{EMAIL_TYPE}}.no_content.no_term&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign={{now format='yyyy_MM_dd'}}_LID__{{EMAIL_TYPE}}&utm_content=no_content&utm_term=no_term"
-                                    target="_blank">www.dafiti.com.br</a>
-                            </font>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td height="4px">
+                        <td>
+                            {{DELIVERY_NAME}}
                         </td>
                     </tr>
                 </table>
-
+                <table>
+                    <tr>
+                        <td>
+                            {{DELIVERY_ADDRESS}}
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Confira os produtos que serão devolvidos:</p>
+                        </td>
+                    </tr>
+                </table>
+                <table style="margin: 15px 0 0;">
+                    <tr>
+                        <td>
+                            {{PRODUCTS}}
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <p style="margin: 15px 0 0; font-size: 14px;">A devolução é bem simples! Só seguir as instruções abaixo:</p>
+                            <ol style="padding: 0 0 0 15px; font-size: 15px; margin-top: 15px;">
+                                <li>
+                                    <p style="margin: 0; font-size: 14px;">Embale direitinho o produto, junto com as etiquetas, manuais e acessórios que foram entregues com o produto.</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">Não se esqueça de colocar a nota fiscal na parte externa da embalagem.</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">Aguarde o envio do código de postagem pelo nosso parceiro logistico.</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">Leve seu produto em até 10 dias úteis ao local escolhido.</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">Após o recebimento do produto em nosso Centro de Distribuição, enviaremos novas informações por e-mail.</p>
+                                </li>
+                            </ol>
+                            <p style="margin: 20px 0; font-size: 14px;">Fica Ligado!</p>
+                            <ul style="padding: 0 0 0 15px; font-size: 14px;">
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">A solicitação de Troca/ Devolução de produto com defeito deve ser realizada em até 90 (noventa) dias corridos após o recebimento do seu pedido. Não serão aceitas Trocas/Devoluções de produtos com evidências de mau uso.</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 10px 0 0; font-size: 14px;">A solicitação de devolução de produtos recebidos com embalagem avariada ou produto danificado deve ser realizada em até 48h a contar do recebimento.</p>
+                                </li>
+                            </ul>
+                            <p style="margin: 10px 0 0; font-size: 14px;">Dica: Sabia que temos uma maneira bem simples de efetuar trocas através do nosso site? Você vai se surpreender com a rapidez!</p>
+                            <p style="margin: 10px 0 0; font-size: 14px;"><b>Atenção!!!</b></p>
+                            <p style="margin: 0; font-size: 14px;"><b>Não se esqueça de sempre deixar seu telefone e e-mail atualizados.</b></p>
+                            <p style="margin: 0; font-size: 14px;"><b>Caso seja necessário entraremos em contato pelo telefone: (011) 3053-7500</b></p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Estamos à sua disposição!</p>
+                            <p style="margin: 25px 0 0; font-size: 14px;">Um abraço,</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- ABRAÇOS DAFITI -->
+                <table width="100%" align="center" style="text-align: center; margin-top: 20px;">
+                    <tr>
+                        <td>
+                            <p style="text-align: center; font-size: 13px;">
+                                Abraços, <b>Time Dafiti</b> 🖤
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- FIM ABRAÇOS DAFITI -->
             </td>
         </tr>
     </table>

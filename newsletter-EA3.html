@@ -65,63 +65,65 @@
     </header>
 
     <!-- Body -->
-    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 1%;">
+    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 2% 10px;">
         <tr>
             <td>
-                <table border="0" cellspacing="0" cellpadding="0" class="frc">
+                <table>
                     <tr>
-                        <td style="padding-top: 10px; padding-right: 10px" class="frc">
-                            <font class="rfm2" style="font-size:18px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#333333; text-align:justify; padding-top:10px; text-transform:uppercase">
-                                Oi, {{CUSTOMER_NAME}}! <br />
-                            </font>
-                            <font class="rfm3" style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; line-height:15px; color:#333333; text-align:justify; line-height: 20px">
-                                No dia <b>{{DELIVERY_DATE}}</b> fizemos uma nova tentativa de entrega, mas não tivemos sucesso porque não havia ninguém para receber seu pedido no endereço abaixo:<br />
-                            </font> <br />
+                        <td>
+                            <p style="margin: 0; font-size: 16px;">Oi, {{CUSTOMER_NAME}}!</p>
+                            <p style="margin: 0; font-size: 14px;">No dia <b>{{DELIVERY_DATE}}</b> fizemos uma nova tentativa de entrega, mas não tivemos sucesso porque não havia ninguém para receber se</p>
                         </td>
                     </tr>
                 </table>
-                {{DELIVERY_NAME}}<br />
-                <br />
-                {{DELIVERY_ADDRESS}}
-                <table cellpadding="0" cellspacing="0" style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px;">
+
+                <table style="margin: 20px 0 0;">
                     <tr>
-                        <td style="padding-top: 20px; padding-bottom: 10px" class="frc">
-                            <font class="rfm3" style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; line-height:15px; color:#333333; text-align:justify; line-height: 20px">
-                                Como não pudemos entregar seu pedido após três tentativas, ele retornará ao nosso Centro de Distribuição.<br /> <br />
-                                Para que possamos atendê-lo o quanto antes, por favor, ligue para nossa Central de Atendimento (11) 3053-7500 e informe a opção escolhida entre as listadas abaixo:</font>
+                        <td>
+                            {{DELIVERY_NAME}}
                         </td>
                     </tr>
                 </table>
-                <table cellpadding="0" cellspacing="0" style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:14px;">
+
+                <table style="margin: 20px 0 0;">
                     <tr>
-                        <td width="20" style="vertical-align:top; padding-left:10px;">1)</td>
-                        <td style="padding-bottom:10px;">Reenvio da compra sujeito à disponibilidade dos produtos em nosso estoque;</td>
-                    </tr>
-                    <tr>
-                        <td width="20" style="vertical-align:top; padding-left:10px;">2)</td>
-                        <td style="padding-bottom:10px;">Troca por vale-compras;</td>
-                    </tr>
-                    <tr>
-                        <td width="20" style="vertical-align:top; padding-left:10px;">3)</td>
-                        <td style="padding-bottom:10px;">Cancelamento da compra e devolução do valor pago.</td>
-                    </tr>
-                </table>
-                <br />
-                <table cellpadding="0" cellspacing="0" style="font-family:Roboto, Trebuchet MS, Arial, sans-serif; font-size:12px;">
-                    <tr>
-                        <td style="padding-right: 10px; padding-bottom: 10px" class="frc">
-                            <font class="rfm2" style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#333333; text-align:justify; padding-top:10px;">
-                                <br />
-                                Um abraço,<br /> <br />
-                                Equipe Dafiti<br />
-                                <a href="https://www.dafiti.com.br/?em=EmailTrans_Dafiti.EA3.no_content.no_term&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign={{now format='yyyy_MM_dd'}}_PINPOINT__{{EMAIL_TYPE}}&utm_content=no_content&utm_term=no_term" target="_blank">www.dafiti.com.br</a>
-                            </font>
+                        <td>
+                            {{DELIVERY_ADDRESS}}
                         </td>
                     </tr>
+                </table>
+
+                <table>
                     <tr>
-                        <td height="4px"></td>
+                        <td>
+                            <p style="margin: 20px 0 0; font-size: 14px;">Como não pudemos entregar seu pedido após três tentativas, ele retornará ao nosso Centro de Distribuição.</p>
+                            <p style="margin: 15px 0 0; font-size: 14px;">Para que possamos atendê-lo o quanto antes, por favor, ligue para nossa Central de Atendimento (11) 3053-7500 e informe a opção escolhida entre as listadas abaixo:</p>
+                            <ol style="padding: 0 0 0 15px; font-size: 14px; margin-top: 15px;">
+                                <li>
+                                    <p style="margin: 5px 0 0; font-size: 14px;">Reenvio da compra sujeito à disponibilidade dos produtos em nosso estoque;</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 5px 0 0; font-size: 14px;">Troca por vale-compras;</p>
+                                </li>
+                                <li>
+                                    <p style="margin: 5px 0 0; font-size: 14px;">Cancelamento da compra e devolução do valor pago.</p>
+                                </li>
+                            </ol>
+                            <p style="margin: 20px 0 0; font-size: 14px;">Um abraço,</p>
+                        </td>
                     </tr>
                 </table>
+                <!-- ABRAÇOS DAFITI -->
+                <table width="100%" align="center" style="text-align: center; margin-top: 20px;">
+                    <tr>
+                        <td>
+                            <p style="text-align: center; font-size: 13px;">
+                                Abraços, <b>Time Dafiti</b> 🖤
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- FIM ABRAÇOS DAFITI -->
             </td>
         </tr>
     </table>

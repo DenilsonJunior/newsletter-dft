@@ -65,81 +65,47 @@
     </header>
 
     <!-- Body -->
-    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 1%;">
+    <table width="100%" style="max-width: 700px; margin: 0 auto; padding: 30px 2% 10px;">
         <tr>
             <td>
-
-                <!-- Content 1 -->
-                <table class="frc" border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                        <tr>
-                            <td style="padding-top: 10px; padding-right: 10px;" class="frc">
-                                <font class="rfm2"
-                                    style="font-size: 18px; font-family: Roboto,Trebuchet MS,Arial,sans-serif; color: rgb(51, 51, 51); text-align: justify; padding-top: 10px; text-transform: uppercase;">
-                                    Oi, {{CUSTOMER_NAME}}! <br>
-                                </font>
-                                <font class="rfm3"
-                                    style="font-size: 14px; font-family: Roboto,Trebuchet MS,Arial,sans-serif; color: rgb(51, 51, 51); text-align: justify; line-height: 20px;">
-                                    Informamos que seu pedido <b>{{ORDER_NUMBER}}</b> não foi aprovado no processo de
-                                    análise cadastral e sua compra foi cancelada. <br /> <br />
-                                    Isso pode ter acontecido, por exemplo, os dados do titular do cartão não conferem
-                                    com o registro da instituição financeira. <br /> <br />
-                                    Mas não se preocupe, você pode acessar o nosso site e fazer um novo pedido a
-                                    qualquer momento, utilizando outro cartão ou outra forma de pagamento! Estamos te
-                                    esperando com várias novidades! :-)
-                                    <br /> <br />
-                                    Veja o(s) produto(s) que você escolheu:<br />
-                                </font>
-
-                                {{PRODUCTS}}
-
-                                <p>
-                                    <font class="rfm2"
-                                        style="font-size:14px; font-family: Roboto, Trebuchet MS, Arial, sans-serif; color:#333333; text-align:justify; padding-top:10px;">
-                                        {{#eq IS_MARKETPLACE "1"}}
-                                        Marketplace: A responsabilidade da venda &eacute; da Dafiti e a entrega &eacute;
-                                        feita pelo parceiro.
-                                        {{else}}
-                                        {{/eq}}
-                                    </font>
-                                </p>
-                                <br />
-
-                                <font class="rfm3"
-                                    style="font-size: 14px; font-family: Roboto,Trebuchet MS,Arial,sans-serif; color: rgb(51, 51, 51); text-align: justify; line-height: 20px;">
-                                    Lembre-se que a partir deste momento, não podemos garantir a disponibilidade do(s)
-                                    produto(s) que você havia escolhido.
-                                </font> <br>
-                            </td>
-                        </tr>
-                    </tbody>
+                <table>
+                    <tr>
+                        <td>
+                            <p style="margin: 0; font-size: 16px;">Oi, {{CUSTOMER_NAME}}!</p>
+                            <p style="margin: 0; font-size: 14px;">Informamos que seu pedido <b>{{ORDER_NUMBER}}</b> não foi aprovado no processo de análise cadastral e sua compra foi cancelada.</p>
+                            <p style="margin: 20px 0 0; font-size: 14px;">Isso pode ter acontecido, por exemplo, os dados do titular do cartão não conferem com o registro da instituição financeira.</p>
+                            <p style="margin: 20px 0 0; font-size: 14px;">Mas não se preocupe, você pode acessar o nosso site e fazer um novo pedido a qualquer momento, utilizando outro cartão ou outra forma de pagamento! Estamos te esperando com várias novidades! :-)</p>
+                            <p style="margin: 20px 0 0; font-size: 14px;">Veja o(s) produto(s) que você escolheu:</p>
+                        </td>
+                    </tr>
                 </table>
-
-                <!-- Content 2 -->
-                <table style="font-family: Roboto,Trebuchet MS,Arial,sans-serif; font-size: 12px;" cellpadding="0"
-                    cellspacing="0">
-                    <tbody>
-                        <tr>
-                            <td style="padding-top: 12px; padding-right: 10px; padding-bottom: 10px;" class="frc">
-                                <font class="rfm2"
-                                    style="font-size: 14px; font-family: Roboto,Trebuchet MS,Arial,sans-serif; color: rgb(51, 51, 51); text-align: justify; padding-top: 10px;">
-                                    <br>
-                                    Um abraço,<br>
-                                    <br>
-                                    Equipe Dafiti<br>
-                                    <a href="https://www.dafiti.com.br/?em=EmailTrans_Dafiti.REC.no_content.no_term&utm_source=EmailTrans_Dafiti&utm_medium=em&utm_campaign={{now format='yyyy_MM_dd'}}_PINPOINT__{{EMAIL_TYPE}}&utm_content=no_content&utm_term=no_term"
-                                        target="_blank">
-                                        www.dafiti.com.br
-                                    </a>
-                                </font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="4">
-                            </td>
-                        </tr>
-                    </tbody>
+                <table>
+                    <tr>
+                        <td>
+                            {{PRODUCTS}}
+                        </td>
+                    </tr>
                 </table>
+                <table>
+                    <tr>
+                        <td>
+                            <p style="margin: 0; font-size: 14px;">{{#eq IS_MARKETPLACE "1"}} Marketplace: A responsabilidade da venda é da Dafiti e a entrega é feita pelo parceiro. {{else}} {{/eq}}</p>
+                            <p style="margin: 20px 0 0; font-size: 14px;">Lembre-se que a partir deste momento, não podemos garantir a disponibilidade do(s) produto(s) que você havia escolhido.</p>
+                            <p style="margin: 20px 0 0; font-size: 14px;">Um abraço,</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- ABRAÇOS DAFITI -->
+                <table width="100%" align="center" style="text-align: center; margin-top: 20px;">
+                    <tr>
+                        <td>
+                            <p style="text-align: center; font-size: 13px;">
+                                Abraços, <b>Time Dafiti</b> 🖤
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- FIM ABRAÇOS DAFITI -->
             </td>
         </tr>
     </table>
